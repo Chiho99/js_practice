@@ -1,3 +1,4 @@
+console.log('-----get_element_01-----');
 let blue = document.getElementById('blue');
 console.log(blue);
 
@@ -20,3 +21,19 @@ console.log(ul);
 let box = document.getElementById('box');
 let lists = box.children;
 console.log(lists);
+
+console.log('-----edit_element_02-----');
+let blueEl = document.getElementById('blue');
+let text = blueEl.textContent;
+blueEl.textContent = '青';
+console.log(blueEl);
+blueEl.style.color = 'blue';
+console.log(blueEl);
+blueEl.classList.add('blue');
+console.log(blueEl);
+blueEl.classList.remove('red');
+console.log(blueEl);
+
+let input = document.querySelector('#iput-text');
+input.value = "test";
+console.log(inputText);
