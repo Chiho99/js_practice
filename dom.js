@@ -43,18 +43,42 @@ let string = document.querySelector('#text');
 string.addEventListener('mouseover', function(){
     this.style.color = 'pink';
     this.style.fontSize = '20px';
-})
+});
 
 string.addEventListener('mouseleave', function(){
     this.style.color = '';
-})
+});
 
 let input = document.querySelector('#input-text');
 input.addEventListener('change', function(){
     console.log(this.value);
     alert('入力欄が変更されました');
-})
+});
 
 let btn = document.querySelector('click', function(){
     string.textContent = input.value;
-})
+});
+
+console.log('-----add_element_04-----');
+let michiko = document.querySelector('#parent');
+console.log(michiko);
+
+// 要素の作成・追加
+let akemi = document.createElement('div');
+akemi.textContent = 'あけみ';
+console.log(akemi);
+
+let masato = document.createElement('div');
+masato.textContent = 'まさと';
+console.log(masato);
+
+let atsushi = document.createElement('div');
+atsushi.textContent = 'あつし';
+atsushi.id = 'atsushi';
+atsushi.style.color = 'blue';
+atsushi.classList.add('nexseed');
+console.log(atsushi);
+
+michiko.appendChild(akemi);
+michiko.appendChild(masato);
+michiko.insertBefore(atsushi, masato);
