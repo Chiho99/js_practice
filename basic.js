@@ -215,6 +215,7 @@ for(i = 1; i <= 100; i++){
         console.log(i);
     }
 }
+
 console.log('-----29.-----');
 for(i = 1; i <= 100; i++){
     if(i % 3 == 0){
@@ -235,4 +236,45 @@ for(i = 1; i <= 100; i++){
     }else{
         console.log(i);
     }
+}
+
+console.log('-----array_04-----');
+console.log('-----31.-----');
+const array_number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+console.log('-----32.-----');
+const array = ['A', 'B', 'C', 'D', 'E'];
+
+console.log('-----33.-----');
+const animals = ['dog', 'fox', 'monkey'];
+
+console.log('-----34.-----');
+animals.push('elephant');
+console.log(animals);
+
+console.log('-----35.-----');
+animals[0] = 'cat'
+console.log(animals);
+
+console.log('-----36.-----');
+animals.splice(1,1);
+console.log(animals);
+
+console.log('-----37.-----');
+for (animal of animals){
+    console.log(animal);
+}
+
+console.log('-----38.-----');
+for (animal of animals){
+    if(animal !== 'fox'){
+        console.log(animal);
+    }
+}
+console.log('-----39.-----');
+const apps = ['LINE', 'Twitter', 'Facebook', 'Instagram'];
+
+console.log('-----40.-----');
+for (app of apps){
+    console.log(app);
 }
