@@ -164,3 +164,75 @@ switch(x){
         console.log('月が存在しません');
         break;
 }
+
+console.log('-----03_loop-----');
+console.log('-----21.-----');
+for(let i = 1; i <= 10; i++){
+    console.log('hoge');
+
+}
+
+console.log('-----22.-----');
+for (i = 1; i <= 10; i++ ){
+    console.log(i);
+}
+
+console.log('-----23.-----');
+for (i = 1; i < 10; i++ ){
+    console.log(2*i);
+}
+
+console.log('-----24.-----');
+for(i = 1; i <= 100; i++){
+    if(i % 2 == 0){
+        console.log(i);
+    }
+}
+console.log('-----25.-----');
+for (i = 1; i <= 100; i++){
+    if(i % 2 !== 0){
+        console.log(i);
+    }
+}
+
+console.log('-----26.-----');
+for(i = 1; i <= 100; i++){
+    if(i % 3 == 0){
+        console.log(i);
+    }
+}
+
+console.log('-----27.-----');
+for(i = 1; i <= 100; i++){
+    if(i % 5 == 0){
+        console.log(i);
+    }
+}
+
+console.log('-----28.-----');
+for(i = 1; i <= 100; i++){
+    if(i % 15 == 0){
+        console.log(i);
+    }
+}
+console.log('-----29.-----');
+for(i = 1; i <= 100; i++){
+    if(i % 3 == 0){
+        console.log('Fizz');
+    }else{
+        console.log(i);
+    }
+}
+
+console.log('-----30.-----');
+for(i = 1; i <= 100; i++){
+    if(i % 15 == 0){
+        console.log('FizzBuzz');
+    }else if(i % 3 == 0){ 
+        console.log('Fizz');
+    }else if(i % 5 == 0){
+        console.log('buzz');
+    }else{
+        console.log(i);
+    }
+}
