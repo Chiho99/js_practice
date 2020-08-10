@@ -278,3 +278,59 @@ console.log('-----40.-----');
 for (app of apps){
     console.log(app);
 }
+
+console.log('-----object_05-----');
+console.log('-----41.-----');
+const alphabets = {
+    'a':'A',
+    'b':'B',
+    'c':'C',
+    'd':'D'
+};
+
+console.log('-----42.-----');
+alphabets['e'] = 'E';
+
+
+console.log('-----43.-----');
+alphabets['a'] = 'AAA';
+
+console.log('-----44.-----');
+delete alphabets['b'];
+console.log(alphabets);
+
+console.log('-----45.-----');
+for(let key in alphabets){
+    console.log(key);
+}
+
+console.log('-----46.-----');
+for(let key in alphabets){
+    console.log(alphabets[key]);
+}
+
+console.log('-----47.-----');
+for(let key in alphabets){
+        console.log(key + ':' + alphabets[key]);
+    }
+
+console.log('-----48.-----');
+for(let key in alphabets){
+    if(key !== 'c'){
+        console.log(key + ':' + alphabets[key]);
+    }
+}
+
+console.log('-----49.-----');
+for (let key in alphabets){
+    if(alphabets[key] !== 'B'){
+        console.log(key + ':' + alphabets[key]);
+    }
+}
+
+console.log('-----50.-----');
+for(let key in alphabets){
+    if(key !== 'b' && alphabets[key] !== 'C'){
+        console.log(key + ':' + alphabets[key]);
+    }
+}
