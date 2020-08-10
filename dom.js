@@ -34,6 +34,27 @@ console.log(blueEl);
 blueEl.classList.remove('red');
 console.log(blueEl);
 
-let input = document.querySelector('#iput-text');
-input.value = "test";
+let inputText = document.querySelector('#iput-text');
+// input.value = "test";
 console.log(inputText);
+
+console.log('-----add_event_03-----');
+let string = document.querySelector('#text');
+string.addEventListener('mouseover', function(){
+    this.style.color = 'pink';
+    this.style.fontSize = '20px';
+})
+
+string.addEventListener('mouseleave', function(){
+    this.style.color = '';
+})
+
+let input = document.querySelector('#input-text');
+input.addEventListener('change', function(){
+    console.log(this.value);
+    alert('入力欄が変更されました');
+})
+
+let btn = document.querySelector('click', function(){
+    string.textContent = input.value;
+})
