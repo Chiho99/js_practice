@@ -334,3 +334,91 @@ for(let key in alphabets){
         console.log(key + ':' + alphabets[key]);
     }
 }
+
+console.log('-----function_06-----');
+console.log('-----51.-----');
+function perintHoge(){
+    console.log('Hoge');
+}
+perintHoge();
+
+console.log('-----52.-----');
+function printNum(int){
+    console.log(int);
+}
+printNum(2);
+
+console.log('-----53.-----');
+function printKuku(int){
+    for(let i =1; i <= 10; i++){
+        console.log(int*i)
+    }
+}
+printKuku(2);
+
+console.log('-----54.-----');
+function printIsEven(int){
+    if(int % 2 === 0){
+        console.log('偶数です');
+    }else{
+        console.log('奇数です');
+    }
+}
+printIsEven(2);
+
+console.log('-----55.-----');
+function printMessage(str, int){
+    for(let i = 1; i<=int; i++){
+        console.log(str);
+    }
+}
+printMessage('FizzBuzz', 5);
+
+
+console.log('-----56.-----');
+function printMaxNum(int1, int2){
+    if(int1 > int2){
+        console.log(int1);
+    }else if(int2 > int1){
+        console.log(int2);
+    }else{
+        console.log('同じ');
+    }
+}
+printMaxNum(5, 8);
+
+console.log('-----57.-----');
+function getSquared(int){
+    return int*int;
+}
+let result = getSquared(5);
+console.log(result);
+
+console.log('-----58.-----');
+function createSelfIntroductionText(str){
+    return ('私の名前は'+ str + 'です');
+}
+let intro = createSelfIntroductionText('hanako');
+console.log(intro);
+
+console.log('-----59.-----');
+function isEvenNumber(int){
+    if(int % 2 === 0){
+       return true;
+    }else{
+        return false;
+    }
+}
+let evenNumber = isEvenNumber(3);
+console.log(evenNumber);
+
+console.log('-----60.-----');
+function isSeedkun(str){
+    if(str == 'Seedkun'){
+        return true;
+    }else{
+        return false;
+    }
+}
+let seedkun = isSeedkun('Seedkun');
+console.log(seedkun);
